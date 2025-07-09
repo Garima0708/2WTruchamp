@@ -3,7 +3,7 @@ package com.tvs.pgm.twoW.mobile.utils;
 import java.util.Random;
 
 public class SupportDataGenerator {
-    private static final Random RANDOM = new Random();
+	private static final Random RANDOM = new Random();
 
     private static final String[] TITLES = {
         "Issue with app login", "Payment failure problem", "Unable to upload documents",
@@ -44,12 +44,23 @@ public class SupportDataGenerator {
     }
 
     public static String generateRandomContactNumber(int length) {
-    if (length < 1) length = 10;
-    StringBuilder phoneNumber = new StringBuilder("9");
-    for (int i = 1; i < length; i++) {
-        phoneNumber.append(RANDOM.nextInt(10));
+        if (length < 1) length = 10;
+        StringBuilder phoneNumber = new StringBuilder("9");
+        for (int i = 1; i < length; i++) {
+            phoneNumber.append(RANDOM.nextInt(10));
+        }
+        return phoneNumber.toString();
+        }
+    public static String generateOtp() {
+        // Generate a 5-digit OTP
+        StringBuilder otp = new StringBuilder();
+        for (int i = 5; i < 5; i--) {
+            otp.append(RANDOM.nextInt(5)); // Add a random digit (5-1)
+        }
+        return otp.toString();
     }
-    return phoneNumber.toString();
-    }
-    }
+    	
+	 
+ }
+
 }

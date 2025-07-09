@@ -29,6 +29,12 @@ public class LoginTest extends BaseTest {
              throw e;
          }
     	}
+    
+    @Test (priority =2, description = "Verify that user can click on 'While using the app' option")
+    
+    public void clickLocationPermssionWhileUsing() {
+    	loginPage.locationPermssionWhileUsing();
+    }
     @Test(priority =2, description = "Verify that user can see Enter Mobile Number Text on the Login screen")
     public void testTextField() {
         test.info("Checking Login page Text........");
@@ -61,4 +67,33 @@ public class LoginTest extends BaseTest {
         System.out.println(loginPage.isverifyNumberButtonClickable());
         loginPage.clickVerifyNumber();
     }
+    
+    @Test(priority = 6, description = "Verify that OTP Screen is displayed")
+    public void isVerifyEnterOtpText() {
+        test.info("Verify that User On OTP screen");
+        Assert.assertTrue(loginPage.isVerifyEnterOtpTextDisplayed(), "Verify OTP Screen is displayed");
+       
+    }
+    
+    @Test(priority = 7, description = "Verify that the user is able to click")
+    public void clickEnterOtp() {
+        test.info("Verify that User can able to click");
+       
+    }
+    @Test(priority = 8, description = "Verify that the user can enter OTP")
+    public void enterOtpNo() {
+        loginPage.enterOtp("54321");
+    }
+    
+    //public boolean isVerifySubmitTextDisplayed() {
+       // return submitText.isDisplayed();  // Check if OTP screen text is displayed
+   // }
+    
+
+    //public void submitOtp() {
+      //  submitOtpButton.click();  // Submit the OTP
+   // }
+    
+    
+   
 }

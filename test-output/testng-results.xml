@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-09T16:08:20 IST" name="2WAppTestSuite" finished-at="2025-07-09T16:08:41 IST" duration-ms="20309">
+    <groups>
+    </groups>
+    <test started-at="2025-07-09T16:08:20 IST" name="AndroidAppTests" finished-at="2025-07-09T16:08:41 IST" duration-ms="20309">
+      <class name="com.tvs.pgm.twoW.mobile.tests.BaseTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.BaseTest@10d307f1]" started-at="2025-07-09T16:08:10 IST" name="setup" finished-at="2025-07-09T16:08:20 IST" duration-ms="10056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.tvs.pgm.twoW.mobile.tests.BaseTest -->
+      <class name="com.tvs.pgm.twoW.mobile.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:21 IST" name="setup" finished-at="2025-07-09T16:08:21 IST" duration-ms="865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:21 IST" name="startTest" finished-at="2025-07-09T16:08:21 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.locationPermissionText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="locationPermissionText()[pri:1, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:21 IST" name="locationPermissionText" description="Verify that Location permission is present on the Login Page" finished-at="2025-07-09T16:08:22 IST" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locationPermissionText -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:22 IST" name="captureResult" finished-at="2025-07-09T16:08:23 IST" duration-ms="661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=locationPermissionText status=SUCCESS method=LoginTest.locationPermissionText()[pri:1, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method signature="clickLocationPermssionWhileUsing()[pri:2, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:23 IST" name="clickLocationPermssionWhileUsing" description="Verify that user can click on &#039;While using the app&#039; option" finished-at="2025-07-09T16:08:23 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLocationPermssionWhileUsing -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:23 IST" name="startTest" finished-at="2025-07-09T16:08:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.clickLocationPermssionWhileUsing()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:23 IST" name="captureResult" finished-at="2025-07-09T16:08:23 IST" duration-ms="480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickLocationPermssionWhileUsing status=SUCCESS method=LoginTest.clickLocationPermssionWhileUsing()[pri:2, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:23 IST" name="startTest" finished-at="2025-07-09T16:08:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.testTextField()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="testTextField()[pri:2, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:23 IST" name="testTextField" description="Verify that user can see Enter Mobile Number Text on the Login screen" finished-at="2025-07-09T16:08:24 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTextField -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:24 IST" name="captureResult" finished-at="2025-07-09T16:08:24 IST" duration-ms="440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTextField status=SUCCESS method=LoginTest.testTextField()[pri:2, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:24 IST" name="startTest" finished-at="2025-07-09T16:08:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.wrongMobileNumber()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="wrongMobileNumber()[pri:3, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:24 IST" name="wrongMobileNumber" description="Verify that the system not able to move forward with less than 10 digit" finished-at="2025-07-09T16:08:27 IST" duration-ms="2759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongMobileNumber -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:27 IST" name="captureResult" finished-at="2025-07-09T16:08:27 IST" duration-ms="383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongMobileNumber status=SUCCESS method=LoginTest.wrongMobileNumber()[pri:3, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method signature="enterMob()[pri:4, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:27 IST" name="enterMob" description="Verify that the user can enter 10 digit mobile number in the Mobile Number field" finished-at="2025-07-09T16:08:29 IST" duration-ms="1927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterMob -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:27 IST" name="startTest" finished-at="2025-07-09T16:08:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.enterMob()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:29 IST" name="captureResult" finished-at="2025-07-09T16:08:30 IST" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=enterMob status=SUCCESS method=LoginTest.enterMob()[pri:4, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method signature="clickVerifyNumberButton()[pri:5, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:30 IST" name="clickVerifyNumberButton" description="Verify that the user is able to land on the OTP Screen" finished-at="2025-07-09T16:08:31 IST" duration-ms="1406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickVerifyNumberButton -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:30 IST" name="startTest" finished-at="2025-07-09T16:08:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.clickVerifyNumberButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:31 IST" name="captureResult" finished-at="2025-07-09T16:08:32 IST" duration-ms="480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickVerifyNumberButton status=SUCCESS method=LoginTest.clickVerifyNumberButton()[pri:5, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method signature="isVerifyEnterOtpText()[pri:6, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:32 IST" name="isVerifyEnterOtpText" description="Verify that OTP Screen is displayed" finished-at="2025-07-09T16:08:37 IST" duration-ms="5540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isVerifyEnterOtpText -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:32 IST" name="startTest" finished-at="2025-07-09T16:08:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.isVerifyEnterOtpText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:37 IST" name="captureResult" finished-at="2025-07-09T16:08:38 IST" duration-ms="464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=isVerifyEnterOtpText status=SUCCESS method=LoginTest.isVerifyEnterOtpText()[pri:6, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:38 IST" name="startTest" finished-at="2025-07-09T16:08:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.clickEnterOtp()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="clickEnterOtp()[pri:7, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:38 IST" name="clickEnterOtp" description="Verify that the user is able to click" finished-at="2025-07-09T16:08:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickEnterOtp -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:38 IST" name="captureResult" finished-at="2025-07-09T16:08:38 IST" duration-ms="468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickEnterOtp status=SUCCESS method=LoginTest.clickEnterOtp()[pri:7, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:38 IST" name="startTest" finished-at="2025-07-09T16:08:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tvs.pgm.twoW.mobile.tests.LoginTest.enterOtpNo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="enterOtpNo()[pri:8, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:38 IST" name="enterOtpNo" description="Verify that the user can enter OTP" finished-at="2025-07-09T16:08:40 IST" duration-ms="2167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterOtpNo -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:40 IST" name="captureResult" finished-at="2025-07-09T16:08:41 IST" duration-ms="487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=enterOtpNo status=SUCCESS method=LoginTest.enterOtpNo()[pri:8, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb]" started-at="2025-07-09T16:08:41 IST" name="tearDown" finished-at="2025-07-09T16:08:42 IST" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tvs.pgm.twoW.mobile.tests.LoginTest -->
+    </test> <!-- AndroidAppTests -->
+  </suite> <!-- 2WAppTestSuite -->
+</testng-results>
