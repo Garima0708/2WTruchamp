@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Failed suite [2WAppTestSuite]]]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tvs.pgm.twoW.mobile.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="MobileAppTests(failed)(failed)(failed)(failed)">
+    <classes>
+      <class name="com.tvs.pgm.twoW.mobile.tests.DashboardTest">
+        <methods>
+          <include name="verifyCreateQueryText"/>
+          <include name="clickAndEnterAddDescription"/>
+          <include name="verifyAddDescriptionText"/>
+          <include name="startTest"/>
+          <include name="verifySelectCategoryText"/>
+          <include name="tearDownSuite"/>
+          <include name="setup"/>
+          <include name="setupSuite"/>
+          <include name="verifyQueryTitleText"/>
+          <include name="tearDownDriver"/>
+          <include name="captureResult"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.tvs.pgm.twoW.mobile.tests.DashboardTest -->
+    </classes>
+  </test> <!-- MobileAppTests(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [2WAppTestSuite]]]] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AndroidAppTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 09 16:08:20 IST 2025</td>
+<td>Started on:</td><td>Fri Jul 11 22:05:10 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20309 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (323 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,50 +76,596 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.clickVerifyNumberButton()'><b>clickVerifyNumberButton</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that the user is able to land on the OTP Screen</td>
-<td></td>
-<td>1</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.setup()'><b>setup</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767904468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767904468'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.clickEnterOtp()'><b>clickEnterOtp</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that the user is able to click</td>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
 <tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.enterOtpNo()'><b>enterOtpNo</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that the user can enter OTP</td>
-<td></td>
-<td>2</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
-<tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.wrongMobileNumber()'><b>wrongMobileNumber</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that the system not able to move forward with less than 10 digit</td>
-<td></td>
-<td>2</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
-<tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.locationPermissionText()'><b>locationPermissionText</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that Location permission is present on the Login Page</td>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
 <tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.enterMob()'><b>enterMob</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that the user can enter 10 digit mobile number in the Mobile Number field</td>
-<td></td>
-<td>1</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
-<tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.isVerifyEnterOtpText()'><b>isVerifyEnterOtpText</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that OTP Screen is displayed</td>
-<td></td>
-<td>5</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
-<tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.clickLocationPermssionWhileUsing()'><b>clickLocationPermssionWhileUsing</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that user can click on 'While using the app' option</td>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
 <tr>
-<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.testTextField()'><b>testTextField</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest<br>Test method: Verify that user can see Enter Mobile Number Text on the Login screen</td>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@759d26fb</td></tr>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.startTest()'><b>startTest</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.captureResult()'><b>captureResult</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.clickVerifyNumberButton()'><b>clickVerifyNumberButton</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace856055143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace856055143'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.verifyLocationPermissionPopup()'><b>verifyLocationPermissionPopup</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412601264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412601264'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.verifyLocationPermissionOptionText()'><b>verifyLocationPermissionOptionText</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1976804832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1976804832'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.verifyInvalidMobileNumberBlocked()'><b>verifyInvalidMobileNumberBlocked</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace980697799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980697799'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.allowLocationPermission()'><b>allowLocationPermission</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961002599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961002599'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.clickOtpField()'><b>clickOtpField</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace475603167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace475603167'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.enterValidMobileNumber()'><b>enterValidMobileNumber</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1258372214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258372214'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.verifyMobileNumberFieldDisplayed()'><b>verifyMobileNumberFieldDisplayed</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392794732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392794732'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.verifyOtpScreenDisplayed()'><b>verifyOtpScreenDisplayed</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1949298838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1949298838'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
+<tr>
+<td title='com.tvs.pgm.twoW.mobile.tests.LoginTest.enterOtp()'><b>enterOtp</b><br>Test class: com.tvs.pgm.twoW.mobile.tests.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace426394307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace426394307'><pre>java.lang.IllegalStateException: Driver not initialized. Call initializeDriver() first.
+	at com.tvs.pgm.twoW.mobile.base.DriverManager.getDriver(DriverManager.java:33)
+	at com.tvs.pgm.twoW.mobile.pages.BasePage.&lt;init&gt;(BasePage.java:20)
+	at com.tvs.pgm.twoW.mobile.pages.LoginPage.&lt;init&gt;(LoginPage.java:36)
+	at com.tvs.pgm.twoW.mobile.tests.LoginTest.setup(LoginTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.tvs.pgm.twoW.mobile.tests.LoginTest@6b8ca3c8</td></tr>
 </table><p>
 </body>
 </html>

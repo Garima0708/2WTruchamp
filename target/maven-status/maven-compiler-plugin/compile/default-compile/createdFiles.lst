@@ -1,4 +1,4 @@
-com\tvs\pgm\twoW\mobile\pages\Dashboard.class
+com\tvs\pgm\twoW\mobile\pages\DashboardPage.class
 com\tvs\pgm\twoW\mobile\pages\HomePage.class
 com\tvs\pgm\twoW\mobile\base\DriverManager.class
 com\tvs\pgm\twoW\mobile\pages\BasePage.class

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.tvs.pgm.twoW.mobile.tests.DashboardTest">
+        <methods>
+          <include name="verifyRedeemModuleDisplayed"/>
+          <include name="clickWhileUsingTheAppPopUpButton"/>
+          <include name="setup"/>
+          <include name="clickOnRedeemButton"/>
+          <include name="verifyAllowButtonDisplayed"/>
+          <include name="clickOnCancel"/>
+          <include name="clickOnBackArrowRedeemButton"/>
+          <include name="verifyWhileUsingTheAppPopUpDisplayed"/>
+          <include name="startTest"/>
+          <include name="verifyCameraAccessPermissionPopUpDisplayed"/>
+          <include name="verifywNotificationAccessText"/>
+          <include name="clickOnFindPartsModule"/>
+          <include name="clickScanForRewardsButton"/>
+          <include name="clickAllowButton"/>
+          <include name="verifyFindPartsText"/>
+          <include name="tearDown"/>
+          <include name="captureResult"/>
+          <include name="verifyScanForRewardsButtonDisplayed"/>
+        </methods>
+      </class> <!-- com.tvs.pgm.twoW.mobile.tests.DashboardTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
