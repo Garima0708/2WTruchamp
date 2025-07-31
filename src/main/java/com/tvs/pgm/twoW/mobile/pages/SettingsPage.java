@@ -319,7 +319,7 @@ public class SettingsPage extends BasePage {
 	            System.out.println("✅ Delete Account button is present.");
 	            return clickDeleteAccount.isDisplayed();
 	        } catch (Exception e) {
-	            System.out.println("❌ Delete Account button not found: " + e.getMessage());
+	            System.out.println("❌ Delete Account button not found: Hey " + e.getMessage());
 	            return false;
 	        }
 	    }
