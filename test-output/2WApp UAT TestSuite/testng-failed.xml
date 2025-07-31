@@ -16,8 +16,8 @@
           <include name="tearDownDriver"/>
           <include name="verifyQueryTitleText"/>
           <include name="captureResult"/>
-          <include name="setupDriver"/>
           <include name="setupPage"/>
+          <include name="setupDriver"/>
         </methods>
       </class> <!-- com.tvs.pgm.twoW.mobile.tests.DashboardTest -->
     </classes>
