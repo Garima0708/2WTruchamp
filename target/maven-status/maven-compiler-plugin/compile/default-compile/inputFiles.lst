@@ -1,7 +1,10 @@
 C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\base\DriverManager.java
 C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\pages\BasePage.java
 C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\pages\DashboardPage.java
-C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\pages\HomePage.java
 C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\pages\LoginPage.java
+C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\pages\MyAccountPage.java
+C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\pages\SettingsPage.java
+C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\utils\ConfigReader.java
 C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\utils\ExtentReportManager.java
+C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\utils\ScreenshotUtil.java
 C:\Users\LENOVO\eclipse-workspace\2Wapp\src\main\java\com\tvs\pgm\twoW\mobile\utils\SupportDataGenerator.java

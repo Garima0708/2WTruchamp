@@ -1,155 +1,327 @@
 package com.tvs.pgm.twoW.mobile.pages;
-import org.openqa.selenium.support.FindBy;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.time.Duration;
-import java.util.Collections;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.PointerInput;
 
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class HomePage extends BasePage {
-	  @FindBy(xpath="//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[1]")
+public class SettingsPage extends BasePage {
+	
+	  @AndroidFindBy(xpath="//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[1]")
 	    private WebElement settingIcon;
 
-	    @FindBy(xpath="//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[2]")
-	    private WebElement profileIcon;
+	    @AndroidFindBy(accessibility = "Enable Fingerprint Authentication")
+	    private WebElement fingerPrintAuthentication;
 
-	    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Need Any Help\"]")
-	    private WebElement needAnyHelp;
+	    @AndroidFindBy(accessibility = "Passcode Settings")
+	    private WebElement passcodeSettings;
+	    
+	    @AndroidFindBy(accessibility = "Enable/Disable")
+	    private WebElement passcodeSettingsEnableDisable;
+	    
+	    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]")
+	    private WebElement enterPasscode;
+	    
+	    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[2]")
+	    private WebElement confirmPasscode;
+	    
+	    @AndroidFindBy(accessibility = "In what city were you born?")
+	    private WebElement selectPasscodeQuestion;
+	    
+	    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[3]")
+	    private WebElement enterYourPasscodeAnswer;
+	    
+	    @AndroidFindBy(accessibility = "Submit")
+	    private WebElement submitPasscode;
 
-	    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Find A Dealer\"]")
-	    private WebElement findDealer;
+	    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView")
+	    private WebElement backToPasscodeSettingsPage;
+	    
+	    @AndroidFindBy(accessibility = " ")
+	    private WebElement backToSettingsPage;
 
-	    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Vehicle Services\"]")
-	    private WebElement vehicleServies;
+	    @AndroidFindBy(accessibility = "Select Language")
+	    private WebElement selectLanguage;
 
-	    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Training & Troubleshooting\"]")
-	    private WebElement trainingTroublshooting;
+	    @AndroidFindBy(accessibility = "Privacy Policy")
+	    private WebElement privacyPolicy;
+	    
+	    @AndroidFindBy(accessibility = "Terms of Use")
+	    private WebElement termsOfUse;
+	    
+	    @AndroidFindBy(accessibility = "App Version\\nV 1.0.5")
+	    private WebElement appVersion;
 
-	    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Refer a Customer\"]")
-	    private WebElement referCustomer;
+	    
+	    @AndroidFindBy(accessibility = "Delete Account")
+	    private WebElement deleteAccount;
+	    
+	    @AndroidFindBy(accessibility = "//android.widget.EditText")
+	    private WebElement enterDeleteReason;
+	    
+	    @AndroidFindBy(accessibility = "//android.widget.Button[@content-desc=\"Delete Account\"]")
+	    private WebElement clickDeleteAccount;
+	    
 
-	    public HomePage() {        
+	    public SettingsPage() {        
 	        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	    }
 
-	    public boolean verifySettingPresent(){
-	    WebElement element = wait.until(ExpectedConditions.visibilityOf(settingIcon));
-	    System.out.println("setting icon found!");
-	    return element.isDisplayed();
-	    }
-
-	    public boolean verifyProfilePresent() {
-	        WebElement element = wait.until(ExpectedConditions.visibilityOf(profileIcon));
-	        System.out.println("Profile icon found!");
-	        return element.isDisplayed();
-	    }
-
-
-	    public void clickOnSetting(){
-	        WebElement element = wait.until(ExpectedConditions.visibilityOf(settingIcon));
-	        element.click();
-	    }
-
-	    public void clickOnProfie(){
-	        WebElement element = wait.until(ExpectedConditions.visibilityOf(profileIcon));
-	        element.click();
-	    }
-
-	    public boolean checkHelpTile(){
-	        try {
-	            WebElement helpTile = wait.until(ExpectedConditions.visibilityOf(needAnyHelp));
-	            return helpTile.isDisplayed();
-	        } catch (TimeoutException e) {
-	            System.out.println("Need Any Help tile did not appear in time!");
+	    public boolean verifySettingIconPresent(){
+	    	try {
+		    wait.until(ExpectedConditions.visibilityOf(settingIcon));
+		    settingIcon.isDisplayed();
+		    System.out.println("setting icon found!");
+		    return settingIcon.isDisplayed();
+	    	} catch (Exception e) {
+	    		System.out.println("Failed to Find settings icon: " + e.getMessage());
 	            return false;
-	        }   
+	    	}
+		    
+		    }
 
-	    }
-
-	    public boolean checkRefferalTile(){
+	    public boolean clickSettingsIcon() {
 	        try {
-	            WebElement referCustomers = wait.until(ExpectedConditions.visibilityOf(referCustomer));
-	            return referCustomers.isDisplayed();
-	        } catch (TimeoutException e) {
-	            System.out.println("Refer tile did not appear in time!");
+	            wait.until(ExpectedConditions.elementToBeClickable(settingIcon));
+	            settingIcon.click();
+	            System.out.println("Clicked on settings icon.");
+	            return true;
+	        } catch (Exception e) {
+	            System.out.println("Failed to click on settings icon: " + e.getMessage());
 	            return false;
-	        }   
+	        }
 	    }
+	    
+	    
 
-	    public boolean checkTraingTile(){
+	    public boolean isFingerprintTogglePresent() {
 	        try {
-	            WebElement traningTile = wait.until(ExpectedConditions.visibilityOf(trainingTroublshooting));
-	            return traningTile.isDisplayed();
-	        } catch (TimeoutException e) {
-	            System.out.println("Trainging and Troubleshooting tile did not appear in time!");
+	            wait.until(ExpectedConditions.visibilityOf(fingerPrintAuthentication));
+	            System.out.println("Fingerprint Authentication toggle is present.");
+	            return fingerPrintAuthentication.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("Fingerprint toggle not found: " + e.getMessage());
 	            return false;
-	        }   
+	        }
 	    }
 
-	    public boolean checkFindDealerTile(){
+	    public boolean clickFingerprintToggle() {
 	        try {
-	            WebElement findDealerTile = wait.until(ExpectedConditions.visibilityOf(findDealer));
-	            return findDealerTile.isDisplayed();
-	        } catch (TimeoutException e) {
-	            System.out.println("Find A Dealer tile did not appear in time!");
+	            wait.until(ExpectedConditions.elementToBeClickable(fingerPrintAuthentication));
+	            String before =  fingerPrintAuthentication.getAttribute("checked");
+	    	    System.out.println("Before click, checked: " + before);
+	    	    fingerPrintAuthentication.click();
+	            System.out.println("Fingerprint Authentication toggle clicked.");
+	            String after = fingerPrintAuthentication.getAttribute("checked");
+	    	    System.out.println("After click, checked: " + after);
+	            return true;
+	        } catch (Exception e) {
+	            System.out.println("Failed to click fingerprint toggle: " + e.getMessage());
 	            return false;
-	        }   
+	        }
 	    }
 
-	    public boolean vehicleServiesTile(){
+	    public boolean isPasscodeSettingPresent() {
 	        try {
-	            WebElement findDealerTile = wait.until(ExpectedConditions.visibilityOf(vehicleServies));
-	            return findDealerTile.isDisplayed();
-	        } catch (TimeoutException e) {
-	            System.out.println("Vehicle Services tile did not appear in time!");
+	            wait.until(ExpectedConditions.visibilityOf(passcodeSettings));
+	            System.out.println("Passcode setting is present.");
+	            return passcodeSettings.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("Passcode setting not found: " + e.getMessage());
 	            return false;
-	        }   
+	        }
 	    }
 
-	    public void  clickonHelpTile(){
-	        needAnyHelp.click();
+	    public boolean clickPasscodeSetting() {
+	        try {
+	            wait.until(ExpectedConditions.elementToBeClickable(passcodeSettings));
+	            passcodeSettings.click();
+	            System.out.println("Passcode setting clicked.");
+	            return true;
+	        } catch (Exception e) {
+	            System.out.println("Failed to click passcode setting: " + e.getMessage());
+	            return false;
+	        }
 	    }
 
-	    public void clickOnFindDealer(){
-	        findDealer.click();
+	    public boolean isPasscodeTogglePresent() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(passcodeSettingsEnableDisable));
+	            System.out.println("Passcode enable/disable toggle is visible.");
+	            return passcodeSettingsEnableDisable.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("Passcode toggle not found: " + e.getMessage());
+	            return false;
+	        }
 	    }
 
-	    public void clickOnVehicleServices(){
-	        vehicleServies.click();
+	    public boolean clickPasscodeToggle() {
+	        try {
+	            wait.until(ExpectedConditions.elementToBeClickable(passcodeSettingsEnableDisable));
+	            passcodeSettingsEnableDisable.click();
+	            System.out.println("Passcode toggle clicked.");
+	            return true;
+	        } catch (Exception e) {
+	            System.out.println("Failed to click passcode toggle: " + e.getMessage());
+	            return false;
+	        }
 	    }
 
-	    public void clickOnTraining(){
-	        trainingTroublshooting.click();
+	    public boolean isEnterPasscodeDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(enterPasscode));
+	            System.out.println("✅ Enter Passcode field is present.");
+	            return enterPasscode.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Enter Passcode field not found: " + e.getMessage());
+	            return false;
+	        }
 	    }
 
-	    public void clickOnReferCustomer() throws InterruptedException{
-	        Thread.sleep(1000);
-	        referCustomer.click();
+	    public boolean isConfirmPasscodeDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(confirmPasscode));
+	            System.out.println("✅ Confirm Passcode field is present.");
+	            return confirmPasscode.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Confirm Passcode field not found: " + e.getMessage());
+	            return false;
+	        }
 	    }
 
-	    public void scrollUp() {
-	        swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 500, 1500));
-	        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
-	        
-	        // Move to (500, 500) over 1 second
-	        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), 500, 500));
-	        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-	        
-	        driver.perform(Collections.singletonList(swipe));
+	    public boolean isSelectPasscodeQuestionDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(selectPasscodeQuestion));
+	            System.out.println("✅ Select Passcode Question is present.");
+	            return selectPasscodeQuestion.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Select Passcode Question not found: " + e.getMessage());
+	            return false;
+	        }
 	    }
-	    public void scrollDown() {
-	        swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 500, 500));
-	        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
-	        
-	        // Move to (500, 500) over 1 second
-	        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), 500, 1500));
-	        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-	        
-	        driver.perform(Collections.singletonList(swipe));
+
+	    public boolean isEnterPasscodeAnswerDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(enterYourPasscodeAnswer));
+	            System.out.println("✅ Enter Passcode Answer field is present.");
+	            return enterYourPasscodeAnswer.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Enter Passcode Answer field not found: " + e.getMessage());
+	            return false;
+	        }
 	    }
-}
+
+	    public boolean isSubmitPasscodeDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(submitPasscode));
+	            System.out.println("✅ Submit Passcode button is present.");
+	            return submitPasscode.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Submit Passcode button not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isBackToPasscodeSettingsPageDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(backToPasscodeSettingsPage));
+	            System.out.println("✅ Back to Passcode Settings Page button is present.");
+	            return backToPasscodeSettingsPage.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Back to Passcode Settings Page button not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isBackToSettingsPageDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(backToSettingsPage));
+	            System.out.println("✅ Back to Settings Page button is present.");
+	            return backToSettingsPage.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Back to Settings Page button not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isSelectLanguageDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(selectLanguage));
+	            System.out.println("✅ Select Language option is present.");
+	            return selectLanguage.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Select Language option not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isPrivacyPolicyDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(privacyPolicy));
+	            System.out.println("✅ Privacy Policy is present.");
+	            return privacyPolicy.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Privacy Policy not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isTermsOfUseDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(termsOfUse));
+	            System.out.println("✅ Terms of Use is present.");
+	            return termsOfUse.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Terms of Use not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+	    
+	    public String getAppVersionText() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(appVersion));
+	            String version = appVersion.getAttribute("content-desc");
+	            System.out.println("✅ App version: " + version);
+	            return version;
+	        } catch (Exception e) {
+	            System.out.println("❌ Failed to get app version: " + e.getMessage());
+	            return null;
+	        }
+	    }
+
+	    public boolean isDeleteAccountDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(deleteAccount));
+	            System.out.println("✅ Delete Account option is present.");
+	            return deleteAccount.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Delete Account option not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isEnterDeleteReasonDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(enterDeleteReason));
+	            System.out.println("✅ Enter Delete Reason field is present.");
+	            return enterDeleteReason.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Enter Delete Reason field not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	    public boolean isClickDeleteAccountButtonDisplayed() {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(clickDeleteAccount));
+	            System.out.println("✅ Delete Account button is present.");
+	            return clickDeleteAccount.isDisplayed();
+	        } catch (Exception e) {
+	            System.out.println("❌ Delete Account button not found: " + e.getMessage());
+	            return false;
+	        }
+	    }
+
+	}
