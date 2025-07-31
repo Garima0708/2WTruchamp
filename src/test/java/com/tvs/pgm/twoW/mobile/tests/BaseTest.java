@@ -11,13 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -28,31 +22,25 @@ import io.appium.java_client.AppiumDriver;
 
 public class BaseTest {
 
-    protected static ExtentReports extent;
-    protected static ExtentTest test;
-    protected static AppiumDriver driver;
-
     private static final String SCREENSHOT_DIR = "test-output/screenshots/";
+    private static ExtentReports extent;
+    private static ExtentTest test;
 
-    // Initialize ExtentReports once for the entire suite
     @BeforeSuite
     public void setupSuite() {
         extent = ExtentReportManager.getInstance();
-
         try {
             Files.createDirectories(Paths.get(SCREENSHOT_DIR));
         } catch (IOException e) {
-            System.err.println("Failed to create screenshot directory: " + e.getMessage());
+            System.err.println("❌ Failed to create screenshot directory: " + e.getMessage());
         }
     }
 
-    // Initialize driver before each test class
     @BeforeClass
     public void setupDriver() throws MalformedURLException {
         DriverManager.initializeDriver();
     }
 
-    // Start a new ExtentTest before each test method
     @BeforeMethod
     public void startTest(Method method) {
         if (extent == null) {
@@ -67,41 +55,44 @@ public class BaseTest {
         test = extent.createTest(testCaseName);
     }
 
-    // Capture test result and screenshot after each test method
     @AfterMethod
     public void captureResult(ITestResult result) {
-        String screenshotPath = SCREENSHOT_DIR + result.getName() + ".jpeg";
+        AppiumDriver driver = DriverManager.getDriver();
 
-        if (DriverManager.getDriver() != null) {
-            File screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
+        if (driver instanceof TakesScreenshot) {
+            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String screenshotPath = SCREENSHOT_DIR + result.getName() + "_" + System.currentTimeMillis() + ".jpeg";
+
             try {
                 FileHandler.copy(screenshot, new File(screenshotPath));
-                test.addScreenCaptureFromPath(screenshotPath);
+                if (test != null) {
+                    test.addScreenCaptureFromPath(screenshotPath);
+                }
             } catch (IOException e) {
-                test.warning("Screenshot capture failed: " + e.getMessage());
+                if (test != null) test.warning("⚠️ Screenshot capture failed: " + e.getMessage());
             }
         }
 
-        switch (result.getStatus()) {
-            case ITestResult.SUCCESS:
-                test.pass("Test Passed");
-                break;
-            case ITestResult.FAILURE:
-                test.fail("Test Failed: " + result.getThrowable());
-                break;
-            case ITestResult.SKIP:
-                test.skip("Test Skipped: " + result.getThrowable());
-                break;
+        if (test != null) {
+            switch (result.getStatus()) {
+                case ITestResult.SUCCESS:
+                    test.pass("✅ Test Passed");
+                    break;
+                case ITestResult.FAILURE:
+                    test.fail("❌ Test Failed: " + result.getThrowable());
+                    break;
+                case ITestResult.SKIP:
+                    test.skip("⏭️ Test Skipped: " + result.getThrowable());
+                    break;
+            }
         }
     }
 
-    // Quit driver after each test class
     @AfterClass
     public void tearDownDriver() {
         DriverManager.quitDriver();
     }
 
-    // Flush ExtentReports after entire suite is done
     @AfterSuite
     public void tearDownSuite() {
         if (extent != null) {

@@ -1,7 +1,10 @@
 com\tvs\pgm\twoW\mobile\pages\DashboardPage.class
-com\tvs\pgm\twoW\mobile\pages\HomePage.class
+com\tvs\pgm\twoW\mobile\pages\SettingsPage.class
 com\tvs\pgm\twoW\mobile\base\DriverManager.class
 com\tvs\pgm\twoW\mobile\pages\BasePage.class
+com\tvs\pgm\twoW\mobile\utils\ConfigReader.class
 com\tvs\pgm\twoW\mobile\utils\SupportDataGenerator.class
+com\tvs\pgm\twoW\mobile\utils\ScreenshotUtil.class
+com\tvs\pgm\twoW\mobile\pages\MyAccountPage.class
 com\tvs\pgm\twoW\mobile\pages\LoginPage.class
 com\tvs\pgm\twoW\mobile\utils\ExtentReportManager.class

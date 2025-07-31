@@ -5,18 +5,79 @@
     <listener class-name="com.tvs.pgm.twoW.mobile.listeners.TestListener"/>
   </listeners>
   <test thread-count="5" name="2W Tests(failed)">
-    <groups>
-      <run>
-        <include name="Query"/>
-      </run>
-    </groups>
     <classes>
+      <class name="com.tvs.pgm.twoW.mobile.tests.LoginTest">
+        <methods>
+          <include name="verifyOtpScreenDisplayed"/>
+          <include name="tearDownSuite"/>
+          <include name="verifyMobileNumberFieldDisplayed"/>
+          <include name="verifyInvalidMobileNumberBlocked"/>
+          <include name="enterValidMobileNumber"/>
+          <include name="verifyLocationPermissionPopup"/>
+          <include name="setupDriver"/>
+          <include name="verifyLocationPermissionOptionText"/>
+          <include name="clickOtpField"/>
+          <include name="enterOtp"/>
+          <include name="clickVerifyNumberButton"/>
+          <include name="startTest"/>
+          <include name="allowLocationPermission"/>
+          <include name="setupSuite"/>
+          <include name="tearDownDriver"/>
+          <include name="captureResult"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tvs.pgm.twoW.mobile.tests.LoginTest -->
       <class name="com.tvs.pgm.twoW.mobile.tests.DashboardTest">
         <methods>
+          <include name="verifyHelpText"/>
+          <include name="verifyAllQueryStatus"/>
+          <include name="verifySelectCategoryText"/>
+          <include name="tearDownSuite"/>
+          <include name="verifyWhileUsingTheAppText"/>
+          <include name="clickOnRedeemAmountText"/>
+          <include name="clickChooseCategory"/>
+          <include name="clickOnCreateQuery"/>
+          <include name="verifyAllowButtonDisplayed"/>
+          <include name="verifyCreateOrRequestQueryText"/>
+          <include name="verifyIsRedeemSubmitButtonEnable"/>
+          <include name="clickOtpField"/>
+          <include name="clickOnSelectCategory"/>
+          <include name="setupDriver"/>
+          <include name="clickAndEnterAddDescription"/>
           <include name="verifyAddDescriptionText"/>
-          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="verifyEnterAmountTextDisplayed"/>
           <include name="verifyQueryTitleText"/>
+          <include name="tearDownDriver"/>
+          <include name="clickCancelOnWhatsAppBot"/>
+          <include name="verifyRedeemText"/>
+          <include name="clickAllowButton"/>
+          <include name="clickOnHelpQuery"/>
+          <include name="clickRedeem"/>
+          <include name="enterRedeemOtp"/>
+          <include name="verifyCreateQueryText"/>
+          <include name="clickOnRedeemAmount"/>
+          <include name="verifyIsRedeemOtpScreenDisplayed"/>
+          <include name="clickFindParts"/>
+          <include name="clickAndEnterQueryTitle"/>
+          <include name="verifyCameraPermissionText"/>
+          <include name="verifyUniqueMRNGeneration"/>
+          <include name="verifyScanForRewardsText"/>
+          <include name="verifyChooseCategoryText"/>
+          <include name="verifyNotificationAccessText"/>
+          <include name="verifyRedeemAmountText"/>
+          <include name="clickAndEnterAmountRedeem"/>
+          <include name="clickWhileUsingTheApp"/>
+          <include name="tearDown"/>
+          <include name="setupSuite"/>
           <include name="classSetup"/>
+          <include name="clickOnHelp"/>
+          <include name="clickScanForRewardsButton"/>
+          <include name="verifyFindPartsText"/>
+          <include name="clickOnMrmNumberOkText"/>
+          <include name="clickOnOtpSubmitButton"/>
+          <include name="captureResult"/>
+          <include name="clickCreateOrRequestQuery"/>
         </methods>
       </class> <!-- com.tvs.pgm.twoW.mobile.tests.DashboardTest -->
     </classes>

@@ -3,28 +3,27 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tvs.pgm.twoW.mobile.tests.DashboardTest">
+      <class name="com.tvs.pgm.twoW.mobile.tests.LoginTest">
         <methods>
-          <include name="verifyRedeemModuleDisplayed"/>
-          <include name="clickWhileUsingTheAppPopUpButton"/>
-          <include name="setup"/>
-          <include name="clickOnRedeemButton"/>
-          <include name="verifyAllowButtonDisplayed"/>
-          <include name="clickOnCancel"/>
-          <include name="clickOnBackArrowRedeemButton"/>
-          <include name="verifyWhileUsingTheAppPopUpDisplayed"/>
+          <include name="verifyOtpScreenDisplayed"/>
+          <include name="tearDownSuite"/>
+          <include name="verifyInvalidMobileNumberBlocked"/>
+          <include name="enterValidMobileNumber"/>
+          <include name="verifyLocationPermissionText"/>
+          <include name="setupDriver"/>
+          <include name="clickOtpField"/>
+          <include name="enterOtp"/>
+          <include name="clickVerifyNumberButton"/>
           <include name="startTest"/>
-          <include name="verifyCameraAccessPermissionPopUpDisplayed"/>
-          <include name="verifywNotificationAccessText"/>
-          <include name="clickOnFindPartsModule"/>
-          <include name="clickScanForRewardsButton"/>
-          <include name="clickAllowButton"/>
-          <include name="verifyFindPartsText"/>
-          <include name="tearDown"/>
+          <include name="allowLocationPermission"/>
+          <include name="setupSuite"/>
+          <include name="verifyEnterMobileNumberFieldDisplayed"/>
+          <include name="setupPage"/>
+          <include name="tearDownDriver"/>
+          <include name="verifyLocationPermissionPopupDisplayed"/>
           <include name="captureResult"/>
-          <include name="verifyScanForRewardsButtonDisplayed"/>
         </methods>
-      </class> <!-- com.tvs.pgm.twoW.mobile.tests.DashboardTest -->
+      </class> <!-- com.tvs.pgm.twoW.mobile.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
